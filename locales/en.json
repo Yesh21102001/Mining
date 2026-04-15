@@ -1,0 +1,198 @@
+{
+    "site": {
+        "companyName": "Lianyungang Huayin Mining Investment International Trade Co., Ltd.",
+        "tagline": "Connecting China and India with trusted mining and trading services.",
+        "footerText": "Empowering cross-border trade with integrity and efficiency."
+    },
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "services": "Services",
+        "staff": "Our Staff",
+        "contact": "Contact"
+    },
+    "modal": {
+        "title": "Select Your Language",
+        "description": "Choose English or Chinese to continue to our mining and trade services website.",
+        "english": "English",
+        "chinese": "中文"
+    },
+    "hero": {
+        "title": "Mining & Trading Expertise Between China and India",
+        "subtitle": "Reliable mineral sourcing, equipment export and cross-border supply chain solutions for modern enterprise.",
+        "primaryCta": "Explore Services",
+        "secondaryCta": "Contact Us"
+    },
+    "about": {
+        "heading": "About Our Company",
+        "paragraph": "Lianyungang Huayin Mining Investment International Trade Co., Ltd. is rooted in Lianyungang, the eastern bridgehead of the New Eurasian Land Bridge. Relying on the advantages of port hubs and free trade zone policies, the company focuses on bilateral trade between China and India. It is a comprehensive international trade enterprise integrating mineral investment, bulk commodity trade, engineering electromechanical export, and cross-border supply chain services.",
+        "coreBusiness": "Core Business",
+        "importsTitle": "Imports from India to China",
+        "exportsTitle": "Exports from China to India",
+        "imports": [
+            "High-purity quartz stone",
+            "Artistic ores",
+            "Bauxite",
+            "Magnetite",
+            "Crystal",
+            "Broken rice",
+            "Spices"
+        ],
+        "exports": [
+            "Wires and cables",
+            "Generators and transformers",
+            "Solar lighting",
+            "Excavators and forklifts",
+            "Pumps and vehicle parts",
+            "Pharma materials",
+            "Furniture"
+        ],
+        "philosophyTitle": "Philosophy",
+        "philosophy": [
+            "Integrity",
+            "Win-win",
+            "Quality first",
+            "Efficient performance"
+        ]
+    },
+    "services": {
+        "heading": "Business Services",
+        "intro": "From mineral sourcing and investment to logistics, customs clearance, and cross-border support, our full-service platform serves China and India with precision and confidence.",
+        "cards": [
+            {
+                "title": "Mineral Sourcing",
+                "description": "Secure high-quality ores and industrial materials with deep market connections in India and China."
+            },
+            {
+                "title": "Bulk Commodity Trade",
+                "description": "Trusted import and export support for core commodities including quartz, bauxite and industrial metals."
+            },
+            {
+                "title": "Equipment Export",
+                "description": "Deliver generators, transformers, solar lighting and machinery with tailored logistics and customs services."
+            },
+            {
+                "title": "Cross-border Supply Chain",
+                "description": "One-stop procurement, warehousing, freight and financial services to keep projects moving efficiently."
+            }
+        ]
+    },
+    "staff": {
+        "heading": "Our Staff",
+        "intro": "A skilled team of trade, supply chain and mining specialists dedicated to efficient bilateral cooperation.",
+        "members": [
+            {
+                "name": "Li Wei",
+                "role": "Executive Director",
+                "bio": "Oversees cross-border trade operations with deep expertise in mineral investment and logistics."
+            },
+            {
+                "name": "Chen Rui",
+                "role": "Supply Chain Manager",
+                "bio": "Coordinates procurement, warehousing and customs support between China and India."
+            },
+            {
+                "name": "Wang Hao",
+                "role": "Business Development",
+                "bio": "Builds long-term trading partnerships and sources high-value commodity opportunities."
+            },
+            {
+                "name": "Zhang Mei",
+                "role": "Operations Lead",
+                "bio": "Ensures timely delivery for equipment export and bulk shipments across international routes."
+            }
+        ]
+    },
+    "contact": {
+        "heading": "Contact Us",
+        "intro": "Get in touch for procurement, export, customs and cross-border supply chain services.",
+        "formName": "Name",
+        "formEmail": "Email",
+        "formMessage": "Message",
+        "formSubmit": "Send Message",
+        "addressTitle": "Headquarters",
+        "address": "Lianyungang, Jiangsu, China",
+        "email": "contact@huayintrade.com",
+        "phone": "+86 400 800 9000",
+        "messageSent": "Your message has been prepared. Our team will contact you shortly."
+    },
+    "home": {
+        "stats": [
+            {
+                "value": "15+",
+                "label": "Years"
+            },
+            {
+                "value": "30+",
+                "label": "Countries"
+            },
+            {
+                "value": "500+",
+                "label": "Partners"
+            },
+            {
+                "value": "8",
+                "label": "Minerals"
+            }
+        ],
+        "products": {
+            "heading": "Products",
+            "title": "Mineral Products",
+            "items": [
+                {
+                    "icon": "🔴",
+                    "name": "Iron Ore",
+                    "subtitle": "Fe 58–68% • AU · BR · IN",
+                    "specs": "Premium iron ore for steelmaking and industrial use."
+                },
+                {
+                    "icon": "⚫",
+                    "name": "Coal",
+                    "subtitle": "Thermal & Coking • ID · MN · RU",
+                    "specs": "Reliable thermal and coking coal supply for global energy markets."
+                },
+                {
+                    "icon": "🟠",
+                    "name": "Copper",
+                    "subtitle": "Conc. & Cathode • CL · CD · PE",
+                    "specs": "High-quality copper for manufacturing and infrastructure."
+                },
+                {
+                    "icon": "🟤",
+                    "name": "Manganese",
+                    "subtitle": "Mn 35–48% • ZA · GH · GA",
+                    "specs": "Manganese material for steel and alloy applications."
+                }
+            ]
+        },
+        "advantages": {
+            "heading": "Why HuaIn",
+            "title": "Our Advantages",
+            "items": [
+                {
+                    "number": "01",
+                    "title": "Premier Port Location",
+                    "description": "Lianyungang offers unmatched access to shipping and inland rail for Eurasian trade."
+                },
+                {
+                    "number": "02",
+                    "title": "Full Supply Chain",
+                    "description": "We manage sourcing, logistics, customs and delivery in one streamlined workflow."
+                },
+                {
+                    "number": "03",
+                    "title": "Regulatory Expertise",
+                    "description": "Deep compliance experience for China import law and international trade operations."
+                },
+                {
+                    "number": "04",
+                    "title": "15+ Years Experience",
+                    "description": "A proven team supporting large-scale commodity trade and mining investment."
+                }
+            ]
+        }
+    },
+    "footer": {
+        "rights": "© 2026 Lianyungang Huayin Mining Investment International Trade Co., Ltd. All rights reserved."
+    }
+}

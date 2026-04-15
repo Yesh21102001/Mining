@@ -1,0 +1,457 @@
+/* ════════════════════════════════════════════════════════════
+   contact.module.css — Dark Split Panel Design
+   ════════════════════════════════════════════════════════════ */
+
+/* ── Root wrapper — overrides page padding to go full-bleed ── */
+.contactWrap {
+    display: flex;
+    align-items: stretch;
+    min-height: 80vh;
+    /* Pull out of the parent's padding so the dark panel bleeds */
+    margin: -2rem -2rem 0;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* ══════════════════
+   LEFT DARK PANEL
+   ══════════════════ */
+.panel {
+    width: 42%;
+    min-width: 300px;
+    background: #0d1117;
+    padding: 3.5rem 2.75rem 3rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative circles */
+.panel::before {
+    content: '';
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    top: -100px;
+    right: -160px;
+    pointer-events: none;
+}
+
+.panel::after {
+    content: '';
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    bottom: -70px;
+    left: -80px;
+    pointer-events: none;
+}
+
+.eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #22c55e;
+    font-weight: 600;
+    margin-bottom: 1.75rem;
+}
+
+.eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 1.5px;
+    background: #22c55e;
+    flex-shrink: 0;
+}
+
+.panelHeading {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+    font-weight: 400;
+    line-height: 1.15;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+    font-style: italic;
+}
+
+.panelSub {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 1.8;
+    margin-bottom: auto;
+    padding-bottom: 2.5rem;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.08);
+    margin-bottom: 1.75rem;
+    flex-shrink: 0;
+}
+
+/* Info list */
+.infoList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.infoRow {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.875rem;
+}
+
+.infoIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    background: #21262d;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    color: #22c55e;
+    margin-top: 1px;
+    flex-shrink: 0;
+}
+
+.infoLabel {
+    font-size: 0.67rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.35);
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    line-height: 1;
+}
+
+.infoVal {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.45;
+    word-break: break-word;
+}
+
+.infoLink {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    word-break: break-word;
+    transition: color 0.15s;
+}
+
+.infoLink:hover {
+    color: #ffffff;
+}
+
+/* WhatsApp quick link in panel */
+.waPanelBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.9rem 1.1rem;
+    background: rgba(34, 197, 94, 0.1);
+    border: 1px solid rgba(34, 197, 94, 0.22);
+    border-radius: 12px;
+    color: #22c55e;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-family: inherit;
+    text-decoration: none;
+    transition: background 0.2s, border-color 0.2s;
+    margin-top: auto;
+}
+
+.waPanelBtn:hover {
+    background: rgba(34, 197, 94, 0.18);
+    border-color: rgba(34, 197, 94, 0.4);
+}
+
+.arrow {
+    margin-left: auto;
+    opacity: 0.5;
+    flex-shrink: 0;
+}
+
+/* ═══════════════════
+   RIGHT FORM AREA
+   ═══════════════════ */
+.formArea {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2.5rem;
+    background: #f4f1eb;
+    min-width: 0;
+}
+
+.formCard {
+    width: 100%;
+    max-width: 460px;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 2.5rem 2.25rem 2rem;
+    box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.04),
+        0 12px 40px rgba(0, 0, 0, 0.07);
+}
+
+.cardTitle {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #0d1117;
+    margin-bottom: 0.35rem;
+    line-height: 1.25;
+}
+
+.cardSub {
+    font-size: 0.84rem;
+    color: #6b7280;
+    margin-bottom: 1.75rem;
+    line-height: 1.65;
+}
+
+/* ── Form fields ── */
+.fields {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.fieldGroup {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.fieldGroup input,
+.fieldGroup textarea {
+    width: 100%;
+    padding: 1.15rem 1rem 0.45rem;
+    font-size: 0.9375rem;
+    font-family: inherit;
+    color: #111827;
+    background: #f9fafb;
+    border: 1.5px solid #e5e7eb;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+    transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+    line-height: 1.55;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.fieldGroup textarea {
+    padding-top: 1.45rem;
+    min-height: 120px;
+}
+
+.fieldGroup label {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+    color: #9ca3af;
+    pointer-events: none;
+    transition: all 0.16s ease;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+.textareaGroup label {
+    top: 1.1rem;
+    transform: none;
+}
+
+/* Float label up */
+.fieldGroup.active label,
+.fieldGroup.filled label {
+    top: 0.38rem;
+    font-size: 0.67rem;
+    color: #16a34a;
+    transform: none;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.textareaGroup.active label,
+.textareaGroup.filled label {
+    top: 0.38rem;
+    font-size: 0.67rem;
+}
+
+/* Focus */
+.fieldGroup.active input,
+.fieldGroup.active textarea {
+    border-color: #22c55e;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
+}
+
+
+.fieldGroup input:hover:not(:focus),
+.fieldGroup textarea:hover:not(:focus) {
+    border-color: #d1d5db;
+}
+
+/* Error */
+.fieldGroup.hasError input,
+.fieldGroup.hasError textarea {
+    border-color: #ef4444;
+    background: #fff9f9;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.08);
+}
+
+.fieldGroup.hasError label,
+.fieldGroup.hasError.active label {
+    color: #ef4444;
+}
+
+.errorMsg {
+    display: block;
+    font-size: 0.73rem;
+    color: #ef4444;
+    margin-top: 0.28rem;
+    padding-left: 0.2rem;
+}
+
+/* ── WhatsApp submit ── */
+.waBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    width: 100%;
+    padding: 0.9rem 1.5rem;
+    margin-top: 0.25rem;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    font-family: inherit;
+    color: #ffffff;
+    background: #16a34a;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+    letter-spacing: 0.01em;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.waBtn:hover {
+    background: #15803d;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(22, 163, 74, 0.3);
+}
+
+.waBtn:active {
+    transform: translateY(0);
+    box-shadow: none;
+    background: #166534;
+}
+
+.waHint {
+    text-align: center;
+    font-size: 0.73rem;
+    color: #9ca3af;
+    line-height: 1.5;
+    margin-top: -0.2rem;
+}
+
+/* ══════════════════
+   RESPONSIVE
+   ══════════════════ */
+
+/* Tablet */
+@media (max-width: 900px) {
+    .contactWrap {
+        margin: -1.5rem -1.5rem 0;
+    }
+
+    .panel {
+        width: 38%;
+        min-width: 260px;
+        padding: 2.75rem 2rem 2.5rem;
+    }
+
+    .formArea {
+        padding: 2.5rem 1.75rem;
+    }
+
+    .formCard {
+        padding: 2.25rem 1.75rem 1.75rem;
+    }
+}
+
+/* Mobile — stack vertically */
+@media (max-width: 680px) {
+    .contactWrap {
+        flex-direction: column;
+        margin: -1rem -1rem 0;
+        border-radius: 12px;
+        min-height: unset;
+    }
+
+    .panel {
+        width: 100%;
+        min-width: unset;
+        padding: 2.25rem 1.5rem 2rem;
+    }
+
+    .panel::before,
+    .panel::after {
+        display: none;
+    }
+
+    .panelHeading {
+        font-size: 1.75rem;
+    }
+
+    .panelSub {
+        padding-bottom: 1.5rem;
+    }
+
+    .formArea {
+        padding: 1.75rem 1.25rem 2.5rem;
+        background: #f4f1eb;
+    }
+
+    .formCard {
+        padding: 1.75rem 1.25rem 1.5rem;
+        border-radius: 14px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .cardTitle {
+        font-size: 1.3rem;
+    }
+
+    .fieldGroup input,
+    .fieldGroup textarea {
+        font-size: 1rem;
+        /* prevent iOS zoom */
+    }
+
+    .waBtn {
+        padding: 1rem 1.25rem;
+        font-size: 1rem;
+    }
+}

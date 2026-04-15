@@ -1,0 +1,62 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(14, 28, 12, 0.6);
+    backdrop-filter: blur(6px);
+    z-index: 100;
+}
+
+.popup {
+    width: min(420px, calc(100% - 32px));
+    background: #f7f9f5;
+    border: 1px solid rgba(60, 108, 63, 0.12);
+    border-radius: 28px;
+    padding: 32px;
+    box-shadow: 0 30px 70px rgba(10, 40, 15, 0.16);
+}
+
+.header h2 {
+    margin-bottom: 10px;
+    color: #12401f;
+    font-size: 1.55rem;
+}
+
+.header p {
+    color: #4f6c52;
+    line-height: 1.85;
+}
+
+.buttons {
+    margin-top: 24px;
+    display: grid;
+    gap: 14px;
+}
+
+.primaryButton,
+.secondaryButton {
+    border: none;
+    width: 100%;
+    border-radius: 999px;
+    padding: 14px 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primaryButton {
+    background: linear-gradient(135deg, #3d8851, #81c56f);
+    color: white;
+}
+
+.secondaryButton {
+    background: #eff6ed;
+    color: #2f5736;
+}
+
+.primaryButton:hover,
+.secondaryButton:hover {
+    transform: translateY(-1px);
+}

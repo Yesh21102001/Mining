@@ -1,0 +1,158 @@
+.footerWrapper {
+    width: 100%;
+    background: #0d1f2d;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.2fr;
+    gap: 48px;
+    align-items: start;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 52px 40px 40px;
+}
+
+/* ── Company Block ── */
+.companyBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.companyNameChinese {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #c9a84c;
+    margin: 0;
+    letter-spacing: 0.02em;
+}
+
+.companyNameEn {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    color: rgba(255, 255, 255, 0.35);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.companyTagline {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.6;
+    margin: 8px 0 0;
+    max-width: 320px;
+}
+
+/* ── Column ── */
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.columnTitle {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.35);
+    margin: 0 0 4px;
+}
+
+.footerLink {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    line-height: 1;
+}
+
+.footerLink:hover {
+    color: #c9a84c;
+}
+
+/* ── HQ Box ── */
+.hqBox {
+    margin-top: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.hqTitle {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #c9a84c;
+    margin: 0 0 4px;
+}
+
+.hqLine {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.55);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ── Bottom Bar ── */
+.bottomBar {
+    width: 100%;
+    background: #0d1f2d;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.bottomInner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 18px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copy {
+    font-size: 0.78rem;
+    color: rgba(255, 255, 255, 0.3);
+    margin: 0;
+}
+
+.location {
+    font-size: 0.78rem;
+    color: rgba(255, 255, 255, 0.3);
+    margin: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        gap: 36px;
+        padding: 40px 28px 32px;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 32px 20px 28px;
+    }
+
+    .companyTagline {
+        max-width: 100%;
+    }
+
+    .bottomInner {
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+        padding: 16px 20px;
+    }
+}

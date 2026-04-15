@@ -1,0 +1,142 @@
+.header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(18px);
+    z-index: 40;
+    border-bottom: 1px solid rgba(10, 61, 98, 0.12);
+}
+
+.inner {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 24px;
+    padding: 12px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* ── Logo ── */
+.brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.logoImg {
+    height: 42px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* ── Desktop nav ── */
+.navList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.navLink {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.88rem;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 999px;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navLink:hover {
+    background: rgba(96, 163, 188, 0.14);
+}
+
+.activeLink {
+    color: white;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+/* ── Actions ── */
+.actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.langButton,
+.ctaButton {
+    border-radius: 999px;
+    padding: 8px 18px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+}
+
+.langButton {
+    border: 1px solid var(--primary);
+    background: white;
+    color: var(--primary);
+}
+
+.langButton:hover {
+    background: rgba(96, 163, 188, 0.14);
+}
+
+.ctaButton {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    border: none;
+}
+
+.ctaButton:hover {
+    opacity: 0.9;
+}
+
+/* ── Tablet ── */
+@media (max-width: 900px) {
+    .inner {
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto auto;
+        padding: 12px 24px;
+        gap: 10px;
+    }
+
+    .navList {
+        grid-column: 1 / -1;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+}
+
+/* ── Mobile ── */
+@media (max-width: 640px) {
+    .inner {
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto;
+        padding: 10px 18px;
+        gap: 0;
+    }
+
+    /* Hide desktop nav & CTA — bottom nav takes over */
+    .navList {
+        display: none;
+    }
+
+    .ctaButton {
+        display: none;
+    }
+
+    .actions {
+        justify-content: flex-end;
+    }
+}
