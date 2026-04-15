@@ -76,9 +76,10 @@ svg {
   position: relative;
 }
 
+
 .appMain {
   flex: 1;
-  padding-bottom: 120px;
+  padding-bottom: 72px;
 }
 
 @media (max-width: 900px) {
