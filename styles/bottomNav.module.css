@@ -10,8 +10,9 @@
         bottom: 0;
         left: 0;
         right: 0;
-        height: 64px;
-        /* set a fixed height */
+        min-height: 64px;
+        /* allow padding-safe area without clipping */
+        box-sizing: border-box;
         z-index: 999;
 
         background: #ffffff;
