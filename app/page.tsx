@@ -329,7 +329,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className={styles.viewAllWrap}>
-            <Link href="/imports" className={styles.viewAllBtn}>
+            <Link href="/services" className={styles.viewAllBtn}>
               {t.trade?.viewAll ?? "View All"} →
             </Link>
           </div>
