@@ -18,8 +18,8 @@ const navLinks: Array<{ href: string; key: NavKey }> = [
 ];
 
 const languages = [
-    { code: "en", label: "English", },
-    { code: "zh", label: "中文", },
+    { code: "en", label: "English", flag: "🇺🇸" },
+    { code: "zh", label: "中文", flag: "🇨🇳" },
 ];
 
 export default function Navbar() {
@@ -75,7 +75,7 @@ export default function Navbar() {
                 {/* Actions */}
                 <div className={styles.actions}>
 
-                    {/* ✅ Language Dropdown */}
+                    {/* Language Dropdown */}
                     <div className={styles.langDropdown} ref={dropdownRef}>
 
                         {/* Trigger button */}
@@ -104,7 +104,7 @@ export default function Navbar() {
                             </svg>
                         </button>
 
-                        {/* ✅ Dropdown menu — only renders when open */}
+                        {/* Dropdown menu — only renders when open */}
                         {dropdownOpen && (
                             <ul className={styles.langMenu}>
                                 {languages.map((lang) => (

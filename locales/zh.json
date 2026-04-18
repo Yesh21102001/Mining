@@ -56,39 +56,147 @@
         ]
     },
     "trade": {
-  "pageTitle": "进出口产品",
-  "pageSubtitle": "以矿产、农业、机械和工业品为纽带，架起印中可靠贸易桥梁。",
-  "viewAll": "查看全部",
-  "backHome": "返回首页",
-  "indiaToChina": {
-    "title": "印度出口中国",
-    "items": [
-      { "name": "矿产资源", "subtitle": "铁矿石 · 煤炭 · 铝土矿", "specs": "铁含量 58–68% · A级", "icon": "⛏️", "img": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&q=75" },
-      { "name": "大米", "subtitle": "香米 · 非香米", "specs": "优质出口级", "icon": "🌾", "img": "https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?w=600&q=75" },
-      { "name": "芥菜籽", "subtitle": "芥菜籽 · 黄色和黑色", "specs": "粗粒级 · 油料作物", "icon": "🫘", "img": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&q=75" },
-      { "name": "香料与调味料", "subtitle": "姜黄 · 辣椒 · 孜然", "specs": "认证 · 出口级", "icon": "🌶️", "img": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=75" },
-      { "name": "油料种子", "subtitle": "芝麻 · 葵花籽 · 亚麻籽", "specs": "油料级 · 精选", "icon": "🌱", "img": "https://images.unsplash.com/photo-1464454709131-ffd692591ee5?w=600&q=75" },
-      { "name": "河鲜海产", "subtitle": "对虾 · 鱼类 · 螃蟹", "specs": "新鲜 · 冷冻 · 认证", "icon": "🦐", "img": "https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?w=600&q=75" }
-    ]
-  },
-  "chinaToIndia": {
-    "title": "中国出口印度",
-    "items": [
-      { "name": "医药原料", "subtitle": "原料药 · 辅料 · 中间体", "specs": "GMP认证 · USP级", "icon": "💊", "img": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&q=75" },
-      { "name": "电线电缆", "subtitle": "电力 · 控制 · 仪表", "specs": "低压 · 高压 · 铠装", "icon": "🔌", "img": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=75" },
-      { "name": "发电机", "subtitle": "柴油 · 燃气 · 静音 · 太阳能", "specs": "5 kVA – 2000 kVA", "icon": "⚡", "img": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=75" },
-      { "name": "水泵及潜水电机", "subtitle": "重型 · 家用 · 农业", "specs": "0.5 HP – 100 HP", "icon": "🔧", "img": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=75" },
-      { "name": "家具", "subtitle": "商用及家用", "specs": "木质 · 金属 · 模块化", "icon": "🪑", "img": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=75" },
-      { "name": "汽车配件", "subtitle": "各类机动车配件", "specs": "原厂 · 副厂 · 全品牌", "icon": "🚗", "img": "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=600&q=75" },
-      { "name": "车用电池", "subtitle": "各类型车辆电池", "specs": "12V – 48V · 铅酸及锂电", "icon": "🔋", "img": "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=600&q=75" },
-      { "name": "起重机及叉车", "subtitle": "柴油 · 电动 · 各吨位", "specs": "1T – 50T · CE认证", "icon": "🏗️", "img": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=75" },
-      { "name": "电气产品", "subtitle": "家用及商用", "specs": "开关 · 配电板 · 配件", "icon": "💡", "img": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=600&q=75" },
-      { "name": "太阳能板及灯具", "subtitle": "太阳能 · 柴油发电机组合", "specs": "100W – 500kW系统", "icon": "☀️", "img": "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=75" },
-      { "name": "静音发电机", "subtitle": "隔音罩 · 室内安全", "specs": "3 kVA – 500 kVA", "icon": "🔇", "img": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=75" },
-      { "name": "电力变压器", "subtitle": "油浸式 · 干式 · 铁芯板", "specs": "11kV – 132kV · ISI认证", "icon": "⚙️", "img": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=75" }
-    ]
-  }
-},
+        "pageTitle": "进出口产品",
+        "pageSubtitle": "以矿产、农业、机械和工业品为纽带，架起印中可靠贸易桥梁。",
+        "viewAll": "查看全部",
+        "backHome": "返回首页",
+        "indiaToChina": {
+            "title": "印度出口中国",
+            "items": [
+                {
+                    "name": "矿产资源",
+                    "subtitle": "铁矿石 · 煤炭 · 铝土矿",
+                    "specs": "铁含量 58–68% · A级",
+                    "icon": "⛏️",
+                    "img": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&q=75"
+                },
+                {
+                    "name": "大米",
+                    "subtitle": "香米 · 非香米",
+                    "specs": "优质出口级",
+                    "icon": "🌾",
+                    "img": "https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?w=600&q=75"
+                },
+                {
+                    "name": "芥菜籽",
+                    "subtitle": "芥菜籽 · 黄色和黑色",
+                    "specs": "粗粒级 · 油料作物",
+                    "icon": "🫘",
+                    "img": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&q=75"
+                },
+                {
+                    "name": "香料与调味料",
+                    "subtitle": "姜黄 · 辣椒 · 孜然",
+                    "specs": "认证 · 出口级",
+                    "icon": "🌶️",
+                    "img": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=75"
+                },
+                {
+                    "name": "油料种子",
+                    "subtitle": "芝麻 · 葵花籽 · 亚麻籽",
+                    "specs": "油料级 · 精选",
+                    "icon": "🌱",
+                    "img": "https://images.unsplash.com/photo-1464454709131-ffd692591ee5?w=600&q=75"
+                },
+                {
+                    "name": "河鲜海产",
+                    "subtitle": "对虾 · 鱼类 · 螃蟹",
+                    "specs": "新鲜 · 冷冻 · 认证",
+                    "icon": "🦐",
+                    "img": "https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?w=600&q=75"
+                }
+            ]
+        },
+        "chinaToIndia": {
+            "title": "中国出口印度",
+            "items": [
+                {
+                    "name": "医药原料",
+                    "subtitle": "原料药 · 辅料 · 中间体",
+                    "specs": "GMP认证 · USP级",
+                    "icon": "💊",
+                    "img": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&q=75"
+                },
+                {
+                    "name": "电线电缆",
+                    "subtitle": "电力 · 控制 · 仪表",
+                    "specs": "低压 · 高压 · 铠装",
+                    "icon": "🔌",
+                    "img": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=75"
+                },
+                {
+                    "name": "发电机",
+                    "subtitle": "柴油 · 燃气 · 静音 · 太阳能",
+                    "specs": "5 kVA – 2000 kVA",
+                    "icon": "⚡",
+                    "img": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=75"
+                },
+                {
+                    "name": "水泵及潜水电机",
+                    "subtitle": "重型 · 家用 · 农业",
+                    "specs": "0.5 HP – 100 HP",
+                    "icon": "🔧",
+                    "img": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=75"
+                },
+                {
+                    "name": "家具",
+                    "subtitle": "商用及家用",
+                    "specs": "木质 · 金属 · 模块化",
+                    "icon": "🪑",
+                    "img": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=75"
+                },
+                {
+                    "name": "汽车配件",
+                    "subtitle": "各类机动车配件",
+                    "specs": "原厂 · 副厂 · 全品牌",
+                    "icon": "🚗",
+                    "img": "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=600&q=75"
+                },
+                {
+                    "name": "车用电池",
+                    "subtitle": "各类型车辆电池",
+                    "specs": "12V – 48V · 铅酸及锂电",
+                    "icon": "🔋",
+                    "img": "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=600&q=75"
+                },
+                {
+                    "name": "起重机及叉车",
+                    "subtitle": "柴油 · 电动 · 各吨位",
+                    "specs": "1T – 50T · CE认证",
+                    "icon": "🏗️",
+                    "img": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=75"
+                },
+                {
+                    "name": "电气产品",
+                    "subtitle": "家用及商用",
+                    "specs": "开关 · 配电板 · 配件",
+                    "icon": "💡",
+                    "img": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=600&q=75"
+                },
+                {
+                    "name": "太阳能板及灯具",
+                    "subtitle": "太阳能 · 柴油发电机组合",
+                    "specs": "100W – 500kW系统",
+                    "icon": "☀️",
+                    "img": "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=75"
+                },
+                {
+                    "name": "静音发电机",
+                    "subtitle": "隔音罩 · 室内安全",
+                    "specs": "3 kVA – 500 kVA",
+                    "icon": "🔇",
+                    "img": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=75"
+                },
+                {
+                    "name": "电力变压器",
+                    "subtitle": "油浸式 · 干式 · 铁芯板",
+                    "specs": "11kV – 132kV · ISI认证",
+                    "icon": "⚙️",
+                    "img": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=75"
+                }
+            ]
+        }
+    },
     "services": {
         "heading": "业务服务",
         "intro": "从矿产采购与投资到物流、报关和跨境支持，我们打造了一站式服务平台，帮助中印贸易稳定发展。",
