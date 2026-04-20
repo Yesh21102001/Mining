@@ -1,45 +1,57 @@
-import styles from "../styles/StaffPage.module.css";
+"use client";
 
-const AVATAR_COLORS = [
-    "avatarTeal",
-    "avatarBlue",
-    "avatarPurple",
-    "avatarCoral",
-    "avatarAmber",
-    "avatarPink",
-] as const;
+import Image from "next/image";
+import { useState } from "react";
+import styles from "../styles/StaffPage.module.css";
 
 interface StaffCardProps {
     name: string;
     role: string;
     bio: string;
+    image: string;
     index?: number;
 }
 
-function getInitials(name: string): string {
+function getInitials(name: string) {
     return name
         .split(" ")
-        .map((part) => part[0])
+        .map((n) => n[0])
         .join("")
-        .slice(0, 2)
-        .toUpperCase();
+        .toUpperCase()
+        .slice(0, 2);
 }
 
-export default function StaffCard({ name, role, bio, index = 0 }: StaffCardProps) {
-    const initials = getInitials(name);
-    const colorKey = AVATAR_COLORS[index % AVATAR_COLORS.length];
+export default function StaffCard({ name, role, image }: StaffCardProps) {
+    const [imgError, setImgError] = useState(false);
 
     return (
         <div className={styles.staffCard}>
-            <div className={`${styles.staffAvatar} ${styles[colorKey]}`}>
-                {initials}
+
+            {/* Photo fills entire card */}
+            <div className={styles.staffPhotoWrap}>
+                {!imgError && image ? (
+                    <Image
+                        src={image}
+                        alt={name}
+                        fill
+                        className={styles.staffPhoto}
+                        onError={() => setImgError(true)}
+                    />
+                ) : (
+                    <div className={styles.staffFallback}>
+                        {getInitials(name)}
+                    </div>
+                )}
             </div>
-            <div className={styles.cardBody}>
-                <p className={styles.staffName}>{name}</p>
-                <p className={styles.staffRole}>{role}</p>
-                <div className={styles.staffSep} />
-                <p className={styles.staffBio}>{bio}</p>
+
+            {/* Name pill overlaid at bottom */}
+            <div className={styles.staffInfo}>
+                <div className={styles.staffText}>
+                    <p className={styles.staffName}>{name}</p>
+                    <p className={styles.staffRole}>{role}</p>
+                </div>
             </div>
+
         </div>
     );
 }

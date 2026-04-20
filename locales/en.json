@@ -137,6 +137,32 @@
             }
         ]
     },
+    "members": [
+    {
+        "name": "Vasam Santoshkumar",
+        "role": "Chairman of the Board",
+        "bio": "Provides strategic leadership and oversees the overall direction of the company's cross-border mining and trade operations.",
+        "image": "/images/VASAM SANTOSH KUMAR.jpeg"
+    },
+    {
+        "name": "Xun Aiguo",
+        "role": "General Manager",
+        "bio": "Leads day-to-day business operations and drives growth across China-India trade and mineral investment activities.",
+        "image": "/images/XUN AIGUO.jpeg"
+    },
+    {
+        "name": "Xiong Yi",
+        "role": "Deputy General Manager",
+        "bio": "Supports senior management in executing trade strategies and managing key partnerships across both markets.",
+        "image": "/images/staff/xiong-yi.jpg"
+    },
+    {
+        "name": "Lu Xianjing",
+        "role": "Operations Supervisor",
+        "bio": "Oversees daily operational workflows, coordinates logistics and ensures smooth execution of import and export activities.",
+        "image": "/images/staff/lu-xianjing.jpg"
+    }
+],
     "contact": {
         "heading": "Contact Us",
         "intro": "Get in touch for procurement, export, customs and cross-border supply chain services.",

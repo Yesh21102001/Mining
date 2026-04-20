@@ -19,8 +19,15 @@ export default function StaffPage() {
 
             <section className={styles.sectionBlock}>
                 <div className={styles.staffGrid}>
-                    {t.staff.members.map((member, index) => (
-                        <StaffCard key={index} index={index} name={member.name} role={member.role} bio={member.bio} />
+                    {t.members.map((member, index) => (   // ✅ t.members not t.staff.members
+                        <StaffCard
+                            key={index}
+                            index={index}
+                            name={member.name}
+                            role={member.role}
+                            bio={member.bio}
+                            image={member.image}
+                        />
                     ))}
                 </div>
             </section>
