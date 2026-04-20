@@ -21,37 +21,33 @@ function getInitials(name: string) {
         .slice(0, 2);
 }
 
-export default function StaffCard({ name, role, image }: StaffCardProps) {
+export default function StaffCard({ name, role, bio, image }: StaffCardProps) {
     const [imgError, setImgError] = useState(false);
 
     return (
-        <div className={styles.staffCard}>
-
-            {/* Photo fills entire card */}
+        <article className={styles.staffCard}>
             <div className={styles.staffPhotoWrap}>
                 {!imgError && image ? (
                     <Image
                         src={image}
                         alt={name}
                         fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                         className={styles.staffPhoto}
                         onError={() => setImgError(true)}
                     />
                 ) : (
-                    <div className={styles.staffFallback}>
-                        {getInitials(name)}
-                    </div>
+                    <div className={styles.staffFallback}>{getInitials(name)}</div>
                 )}
             </div>
 
-            {/* Name pill overlaid at bottom */}
             <div className={styles.staffInfo}>
                 <div className={styles.staffText}>
-                    <p className={styles.staffName}>{name}</p>
+                    <h3 className={styles.staffName}>{name}</h3>
                     <p className={styles.staffRole}>{role}</p>
                 </div>
+                {bio && <p className={styles.staffBio}>{bio}</p>}
             </div>
-
-        </div>
+        </article>
     );
 }

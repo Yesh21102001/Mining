@@ -13,15 +13,15 @@ export default function StaffPage() {
                 <div className={styles.headlineBlock}>
                     <span className={styles.sectionLabel}>{t.staff.heading}</span>
                     <h1>{t.staff.heading}</h1>
+                    <p className={styles.sectionText}>{t.staff.intro}</p>
                 </div>
-                <p className={styles.sectionText}>{t.staff.intro}</p>
             </section>
 
             <section className={styles.sectionBlock}>
                 <div className={styles.staffGrid}>
-                    {t.members.map((member, index) => (   // ✅ t.members not t.staff.members
+                    {t.members.map((member, index) => (
                         <StaffCard
-                            key={index}
+                            key={`${member.name}-${index}`}
                             index={index}
                             name={member.name}
                             role={member.role}
