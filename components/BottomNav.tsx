@@ -5,8 +5,8 @@ import { usePathname } from "next/navigation";
 import styles from "../styles/bottomNav.module.css";
 
 const tabs = [
-    { href: "/", label: "Home", icon: "/icons/house.png" },
-    { href: "/about", label: "About", icon: "/icons/about.png" },
+    { href: "/", label: "Home", icon: "/icons/home.png" },
+    { href: "/about", label: "About", icon: "/icons/info.png" },
     { href: "/services", label: "Services", icon: "/icons/technical-support.png" },
     { href: "/staff", label: "Staff", icon: "/icons/team.png" },
     { href: "/contact", label: "Contact us", icon: "/icons/phone-call.png" },
