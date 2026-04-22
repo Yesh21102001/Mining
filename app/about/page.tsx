@@ -118,7 +118,7 @@ export default function AboutPage() {
                 src="/photos/India-to-China.png"
                 alt="Mineral imports"
               />
-              <span className={styles.coreFlag}>India → China</span>
+
             </div>
             <div className={styles.coreBody}>
               <h3 className={styles.coreTitle}>{t.about.importsTitle}</h3>
@@ -136,7 +136,7 @@ export default function AboutPage() {
                 src="/photos/China-to-India.png"
                 alt="Industrial exports"
               />
-              <span className={styles.coreFlag}>China → India</span>
+
             </div>
             <div className={styles.coreBody}>
               <h3 className={styles.coreTitle}>{t.about.exportsTitle}</h3>
