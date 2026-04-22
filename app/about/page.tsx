@@ -21,7 +21,7 @@ export default function AboutPage() {
         </div>
         <div className={styles.heroImage}>
           <img
-            src="https://images.unsplash.com/photo-1494412651409-8dd199f2ff5c?w=1400&q=80"
+            src="/photos/0b6cbe18-5f2c-45b4-9810-24a0468b5ab7.jpg"
             alt="Port of Lianyungang"
           />
         </div>
@@ -30,19 +30,19 @@ export default function AboutPage() {
       {/* ── PHOTO STRIP (3 stacked images) ── */}
       <section className={styles.photoStrip}>
         <div className={styles.stripImg}>
-          <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=800&q=80" alt="Cargo containers" />
+          <img src="/photos/0b6cbe18-5f2c-45b4-9810-24a0468b5ab7.jpg" alt="Cargo containers" />
           <div className={styles.stripCaption}>Port Operations</div>
         </div>
         <div className={styles.stripImg}>
-          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80" alt="Warehouse" />
+          <img src="/photos/0b6cbe18-5f2c-45b4-9810-24a0468b5ab7.jpg" alt="Warehouse" />
           <div className={styles.stripCaption}>Warehousing</div>
         </div>
         <div className={styles.stripImg}>
-          <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&q=80" alt="Trade route map" />
+          <img src="/photos/0b6cbe18-5f2c-45b4-9810-24a0468b5ab7.jpg" alt="Trade route map" />
           <div className={styles.stripCaption}>Trade Routes</div>
         </div>
         <div className={styles.stripImg}>
-          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Mountain minerals" />
+          <img src="/photos/0b6cbe18-5f2c-45b4-9810-24a0468b5ab7.jpg" alt="Mountain minerals" />
           <div className={styles.stripCaption}>Mineral Sourcing</div>
         </div>
       </section>
@@ -52,7 +52,7 @@ export default function AboutPage() {
         <div className={styles.storyGrid}>
           <div className={styles.storyImage}>
             <img
-              src="https://images.unsplash.com/photo-1577416412292-747c6607f055?w=900&q=80"
+              src="/photos/0b6cbe18-5f2c-45b4-9810-24a0468b5ab7.jpg"
               alt="Container shipping"
             />
             <div className={styles.storyBadge}>
@@ -76,8 +76,8 @@ export default function AboutPage() {
 
             {/* Inline image row inside story */}
             <div className={styles.storyImgRow}>
-              <img src="https://images.unsplash.com/photo-1530973428-5bf2db2e4d71?w=600&q=80" alt="Minerals" />
-              <img src="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=600&q=80" alt="Logistics" />
+              <img src="/photos/0b6cbe18-5f2c-45b4-9810-24a0468b5ab7.jpg" alt="Minerals" />
+              <img src="/photos/0b6cbe18-5f2c-45b4-9810-24a0468b5ab7.jpg" alt="Logistics" />
             </div>
           </div>
         </div>
@@ -86,7 +86,7 @@ export default function AboutPage() {
       {/* ── FULL-WIDTH PANORAMA ── */}
       <section className={styles.panoramaSection}>
         <img
-          src="https://images.unsplash.com/photo-1502083896352-259ab9e342d7?w=1800&q=80"
+          src="/photos/0b6cbe18-5f2c-45b4-9810-24a0468b5ab7.jpg"
           alt="Shipping panorama"
         />
         <div className={styles.panoramaOverlay}>
@@ -115,7 +115,7 @@ export default function AboutPage() {
           <div className={styles.coreCard}>
             <div className={styles.coreImgWrap}>
               <img
-                src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=900&q=80"
+                src="/photos/0b6cbe18-5f2c-45b4-9810-24a0468b5ab7.jpg"
                 alt="Mineral imports"
               />
               <span className={styles.coreFlag}>India → China</span>
@@ -133,7 +133,7 @@ export default function AboutPage() {
           <div className={styles.coreCard}>
             <div className={styles.coreImgWrap}>
               <img
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=80"
+                src="/photos/0b6cbe18-5f2c-45b4-9810-24a0468b5ab7.jpg"
                 alt="Industrial exports"
               />
               <span className={styles.coreFlag}>China → India</span>
@@ -154,20 +154,20 @@ export default function AboutPage() {
       <section className={styles.mosaicSection}>
         <div className={styles.mosaicGrid}>
           <div className={`${styles.mosaicCell} ${styles.mosaicTall}`}>
-            <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=800&q=80" alt="Freight train" />
+            <img src="/photos/0b6cbe18-5f2c-45b4-9810-24a0468b5ab7.jpg" alt="Freight train" />
           </div>
           <div className={styles.mosaicCell}>
-            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Port cranes" />
+            <img src="/photos/0b6cbe18-5f2c-45b4-9810-24a0468b5ab7.jpg" alt="Port cranes" />
           </div>
           <div className={styles.mosaicCell}>
-            <img src="https://images.unsplash.com/photo-1564419434053-a7a3bdd00e7c?w=800&q=80" alt="Mineral processing" />
+            <img src="/photos/0b6cbe18-5f2c-45b4-9810-24a0468b5ab7.jpg" alt="Mineral processing" />
           </div>
           <div className={`${styles.mosaicCell} ${styles.mosaicWide}`}>
-            <img src="https://images.unsplash.com/photo-1494412651409-8dd199f2ff5c?w=1200&q=80" alt="Container ship" />
+            <img src="/photos/0b6cbe18-5f2c-45b4-9810-24a0468b5ab7.jpg" alt="Container ship" />
             <div className={styles.mosaicLabel}>Lianyungang Port, China</div>
           </div>
           <div className={styles.mosaicCell}>
-            <img src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?w=800&q=80" alt="India industry" />
+            <img src="/photos/0b6cbe18-5f2c-45b4-9810-24a0468b5ab7.jpg" alt="India industry" />
           </div>
         </div>
       </section>
@@ -196,7 +196,7 @@ export default function AboutPage() {
       <section className={styles.splitSection}>
         <div className={styles.splitImg}>
           <img
-            src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1000&q=80"
+            src="/photos/0b6cbe18-5f2c-45b4-9810-24a0468b5ab7.jpg"
             alt="Industrial facility"
           />
         </div>
@@ -216,7 +216,7 @@ export default function AboutPage() {
       {/* ── SECOND PANORAMA ── */}
       <section className={styles.panoramaSectionAlt}>
         <img
-          src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1800&q=80"
+          src="/photos/0b6cbe18-5f2c-45b4-9810-24a0468b5ab7.jpg"
           alt="Global logistics night"
         />
         <div className={styles.panoramaOverlayDark} />
@@ -226,7 +226,7 @@ export default function AboutPage() {
       <section className={styles.closingSection}>
         <div className={styles.closingImage}>
           <img
-            src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1400&q=80"
+            src="/photos/0b6cbe18-5f2c-45b4-9810-24a0468b5ab7.jpg"
             alt="Global logistics"
           />
           <div className={styles.closingOverlay} />
