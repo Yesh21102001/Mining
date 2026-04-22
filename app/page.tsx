@@ -10,6 +10,7 @@ export default function HomePage() {
   const { t } = useLanguage();
   const [visible, setVisible] = useState(false);
   const statsRef = useRef<HTMLDivElement>(null);
+  const videoTrackRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -19,6 +20,14 @@ export default function HomePage() {
     if (statsRef.current) observer.observe(statsRef.current);
     return () => observer.disconnect();
   }, []);
+
+  const scrollVideos = (dir: number) => {
+    const el = videoTrackRef.current;
+    if (!el) return;
+    const card = el.querySelector<HTMLElement>(`.${styles.videoCard}`);
+    const step = card ? card.offsetWidth + 24 : 320;
+    el.scrollBy({ left: dir * step, behavior: "smooth" });
+  };
 
   const INDIA_TO_CHINA = [
     {
@@ -274,34 +283,6 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* ── PRODUCTS ── */}
-      {/* <section id="minerals" className={styles.section}>
-        <div className={styles.container}>
-          <div className={styles.secHead}>
-            <p className={styles.eyebrow}>{t.home.products.heading}</p>
-            <h2 className={styles.h2}>{t.home.products.title}</h2>
-          </div>
-          <div className={styles.prodGrid}>
-            {t.home.products.items.map((item, i) => (
-              <article
-                key={item.name}
-                className={styles.prodCard}
-                style={{ backgroundImage: `url(${PROD_IMGS[i % PROD_IMGS.length]})` }}
-              >
-                <div className={styles.prodOverlay} />
-                <div className={styles.prodContent}>
-                  <span className={styles.prodIcon}>{item.icon}</span>
-                  <h3 className={styles.prodName}>{item.name}</h3>
-                  <p className={styles.prodSub}>{item.subtitle}</p>
-                  <p className={styles.prodSpec}>{item.specs}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
-      
       {/* ── TRADE SECTIONS ── */}
       <section id="minerals" className={styles.section}>
         <div className={styles.container}>
@@ -382,6 +363,55 @@ export default function HomePage() {
                 <p className={styles.advDesc}>{item.description}</p>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── VIDEO SLIDER ── */}
+      <section id="videos" className={styles.section}>
+        <div className={styles.container}>
+          <div className={styles.secHead}>
+            <p className={styles.eyebrow}>Watch</p>
+            <h2 className={styles.h2}>Our Operations in Motion</h2>
+          </div>
+
+          <div className={styles.videoSlider}>
+            <button
+              className={`${styles.videoNavBtn} ${styles.videoNavPrev}`}
+              onClick={() => scrollVideos(-1)}
+              aria-label="Previous video"
+            >
+              ←
+            </button>
+
+            <div className={styles.videoTrack} ref={videoTrackRef}>
+              {VIDEOS.map((v) => (
+                <article key={v.title} className={styles.videoCard}>
+                  <div className={styles.videoWrap}>
+                    <video
+                      src={v.src}
+                      poster={v.poster}
+                      controls
+                      preload="metadata"
+                      playsInline
+                    />
+                    <span className={styles.videoTag}>{v.tag}</span>
+                  </div>
+                  <div className={styles.videoInfo}>
+                    <h3 className={styles.videoTitle}>{v.title}</h3>
+                    <p className={styles.videoDesc}>{v.desc}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+
+            <button
+              className={`${styles.videoNavBtn} ${styles.videoNavNext}`}
+              onClick={() => scrollVideos(1)}
+              aria-label="Next video"
+            >
+              →
+            </button>
           </div>
         </div>
       </section>
@@ -471,15 +501,45 @@ const SERVICE_IMGS = [
   "https://images.unsplash.com/photo-1618044733300-9472054094ee?w=600&q=75",
 ];
 
-const PROD_IMGS = [
-  "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=75",
-  "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&q=75",
-  "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=600&q=75",
-  "https://images.unsplash.com/photo-1511174511562-5f97f4d29f83?w=600&q=75",
-  "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=600&q=75",
-];
-
 const MINERALS = ["Iron Ore", "Coal", "Copper", "Manganese", "Cobalt & Zinc", "Limestone", "Bauxite"];
+
+const VIDEOS = [
+  {
+    title: "Port Operations at Lianyungang",
+    desc: "A behind-the-scenes look at our cargo handling and logistics.",
+    tag: "Logistics",
+    src: "/videos/port.mp4",
+    poster: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=900&q=75",
+  },
+  {
+    title: "Iron Ore Processing Facility",
+    desc: "Inside our partner mining and grading operations.",
+    tag: "Mining",
+    src: "/videos/mining.mp4",
+    poster: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=900&q=75",
+  },
+  {
+    title: "India to China Trade Corridor",
+    desc: "How we move commodities across borders, end to end.",
+    tag: "Trade",
+    src: "/videos/trade.mp4",
+    poster: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=900&q=75",
+  },
+  {
+    title: "Generator & Equipment Imports",
+    desc: "Our industrial equipment supply chain from China to India.",
+    tag: "Equipment",
+    src: "/videos/equipment.mp4",
+    poster: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=900&q=75",
+  },
+  {
+    title: "Warehousing & Distribution",
+    desc: "Storage, handling, and last-mile distribution in action.",
+    tag: "Warehouse",
+    src: "/videos/warehouse.mp4",
+    poster: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=900&q=75",
+  },
+];
 
 const INSIGHTS = [
   {
