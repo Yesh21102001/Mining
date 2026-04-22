@@ -133,7 +133,7 @@ export default function AboutPage() {
           <div className={styles.coreCard}>
             <div className={styles.coreImgWrap}>
               <img
-                src="/photos/0b6cbe18-5f2c-45b4-9810-24a0468b5ab7.jpg"
+                src="/photos/China-to-India.png"
                 alt="Industrial exports"
               />
               <span className={styles.coreFlag}>China → India</span>
