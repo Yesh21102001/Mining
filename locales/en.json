@@ -269,6 +269,12 @@
             "role": "Operations Supervisor",
             "bio": "Oversees daily operational workflows, coordinates logistics and ensures smooth execution of import and export activities.",
             "image": "/images/LU XIANJING.jpeg"
+        },
+        {
+            "name": "YANG XIA",
+            "role": "Finance Supervisor",
+            "bio": "Manages financial operations and ensures accuracy in transactions, while supporting efficient coordination of import and export processes.",
+            "image": "/images/YANG XIA.jpeg"
         }
     ],
     "contact": {
