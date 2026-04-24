@@ -390,7 +390,6 @@ export default function HomePage() {
                   <div className={styles.videoWrap}>
                     <video
                       src={v.src}
-                      poster={v.poster}
                       controls
                       preload="metadata"
                       playsInline
