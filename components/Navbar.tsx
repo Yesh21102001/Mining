@@ -46,7 +46,7 @@ export default function Navbar() {
                 {/* Logo */}
                 <Link href="/" className={styles.brand}>
                     <Image
-                        src="/images/logo.png"
+                        src="/images/logo-removebg-preview.png"
                         alt="Lianyungang Huayin Mining Investment"
                         width={200}
                         height={70}
@@ -111,9 +111,8 @@ export default function Navbar() {
                                     <li key={lang.code}>
                                         <button
                                             type="button"
-                                            className={`${styles.langOption} ${
-                                                language === lang.code ? styles.langOptionActive : ""
-                                            }`}
+                                            className={`${styles.langOption} ${language === lang.code ? styles.langOptionActive : ""
+                                                }`}
                                             onClick={() => {
                                                 setLanguage(lang.code as "en" | "zh");
                                                 setDropdownOpen(false);
