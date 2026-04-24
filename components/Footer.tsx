@@ -15,10 +15,10 @@ export default function Footer() {
 
                     {/* Company Block */}
                     <div className={styles.companyBlock}>
-                        <p className={styles.companyNameChinese}>连云港华印矿投国际贸易有限公司</p>
+                        <p className={styles.companyNameChinese}>{"连云港华印矿投国际贸易有限公司"}</p>
                         <p className={styles.companyNameEn}>Lianyungang Huayin Mining Investment International Trading Co., Ltd.</p>
                         <p className={styles.companyTagline}>
-                            Bridging global mineral resources with China&apos;s markets — from Lianyungang to the world.
+                            {"Bridging global mineral resources with China's markets — from Lianyungang to the world."}
                         </p>
                     </div>
 
@@ -27,7 +27,7 @@ export default function Footer() {
                         <p className={styles.columnTitle}>Services</p>
                         <Link href="/services#mining" className={styles.footerLink}>Mining Investment</Link>
                         <Link href="/services#trade" className={styles.footerLink}>International Trade</Link>
-                        <Link href="/services#logistics" className={styles.footerLink}>Logistics &amp; Shipping</Link>
+                        <Link href="/services#logistics" className={styles.footerLink}>{"Logistics & Shipping"}</Link>
                         <Link href="/services#finance" className={styles.footerLink}>Trade Finance</Link>
                         <Link href="/services#advisory" className={styles.footerLink}>Advisory</Link>
                     </div>
@@ -39,7 +39,7 @@ export default function Footer() {
                         <Link href="/services#coal" className={styles.footerLink}>Coal</Link>
                         <Link href="/services#copper" className={styles.footerLink}>Copper</Link>
                         <Link href="/services#manganese" className={styles.footerLink}>Manganese</Link>
-                        <Link href="/services#cobalt" className={styles.footerLink}>Cobalt &amp; Zinc</Link>
+                        <Link href="/services#cobalt" className={styles.footerLink}>{"Cobalt & Zinc"}</Link>
                     </div>
 
                     {/* Company + HQ */}
@@ -52,7 +52,7 @@ export default function Footer() {
                         <div className={styles.hqBox}>
                             <p className={styles.hqTitle}>Headquarters</p>
                             <p className={styles.hqLine}>No. 68 East Hailian Road</p>
-                            <p className={styles.hqLine}>Lianyungang · 222001</p>
+                            <p className={styles.hqLine}>{"Lianyungang · 222001"}</p>
                             <p className={styles.hqLine}>Jiangsu, China</p>
                         </div>
                     </div>
@@ -64,9 +64,20 @@ export default function Footer() {
             <div className={styles.bottomBar}>
                 <div className={styles.bottomInner}>
                     <p className={styles.copy}>
-                        © {year} 连云港华印矿投国际贸易有限公司 · All Rights Reserved
+                        © {year} All Rights Reserved HIMI
                     </p>
-                    <p className={styles.location}>Lianyungang, Jiangsu Province, China</p>
+
+                    <p className={styles.credit}>
+                        Designed and developed by{" "}
+                        <a
+                            href="https://www.instagram.com/host.hive"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.creditLink}
+                        >
+                            Host.Hive
+                        </a>
+                    </p>
                 </div>
             </div>
         </>

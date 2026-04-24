@@ -6,7 +6,7 @@ import styles from "../../styles/contact.module.css";
 
 // 🔁 Replace these with your real values later
 const ADMIN_WHATSAPP = "919603432678";      // country code + number, no "+" or spaces
-const ADMIN_WECHAT = "your_wechat_id";    // your WeChat ID (not phone number)
+const ADMIN_WECHAT = "sahasrayogaworld";   // your WeChat ID (not phone number)
 
 function WaIcon() {
     return (

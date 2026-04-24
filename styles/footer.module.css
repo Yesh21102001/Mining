@@ -4,17 +4,19 @@
     border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+/* Main Footer */
 .footer {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1.2fr;
     gap: 48px;
     align-items: start;
+
     max-width: 1400px;
     margin: 0 auto;
-    padding: 52px 40px 40px;
+    padding: 52px 40px 50px;
 }
 
-/* ── Company Block ── */
+/* Company Block */
 .companyBlock {
     display: flex;
     flex-direction: column;
@@ -26,27 +28,27 @@
     font-weight: 700;
     color: #c9a84c;
     margin: 0;
-    letter-spacing: 0.02em;
+    letter-spacing: .02em;
 }
 
 .companyNameEn {
-    font-size: 0.65rem;
+    font-size: .65rem;
     font-weight: 600;
-    letter-spacing: 0.18em;
-    color: rgba(255, 255, 255, 0.35);
+    letter-spacing: .18em;
     text-transform: uppercase;
+    color: rgba(255, 255, 255, .35);
     margin: 0;
 }
 
 .companyTagline {
-    font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.5);
-    line-height: 1.6;
-    margin: 8px 0 0;
+    font-size: .85rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, .55);
+    margin-top: 8px;
     max-width: 320px;
 }
 
-/* ── Column ── */
+/* Columns */
 .column {
     display: flex;
     flex-direction: column;
@@ -54,58 +56,58 @@
 }
 
 .columnTitle {
-    font-size: 0.68rem;
+    font-size: .68rem;
     font-weight: 700;
-    letter-spacing: 0.2em;
+    letter-spacing: .2em;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.35);
+    color: rgba(255, 255, 255, .35);
     margin: 0 0 4px;
 }
 
 .footerLink {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.75);
+    font-size: .92rem;
+    line-height: 1.4;
     text-decoration: none;
-    transition: color 0.2s ease;
-    line-height: 1;
+    color: rgba(255, 255, 255, .78);
+    transition: .25s ease;
 }
 
 .footerLink:hover {
     color: #c9a84c;
 }
 
-/* ── HQ Box ── */
+/* HQ Box */
 .hqBox {
-    margin-top: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    padding: 14px 16px;
+    margin-top: 10px;
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 7px;
 }
 
 .hqTitle {
-    font-size: 0.65rem;
+    font-size: .65rem;
     font-weight: 700;
-    letter-spacing: 0.18em;
+    letter-spacing: .18em;
     text-transform: uppercase;
     color: #c9a84c;
     margin: 0 0 4px;
 }
 
 .hqLine {
-    font-size: 0.82rem;
-    color: rgba(255, 255, 255, 0.55);
     margin: 0;
-    line-height: 1.5;
+    font-size: .82rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, .6);
 }
 
-/* ── Bottom Bar ── */
+/* Bottom Bar */
 .bottomBar {
     width: 100%;
     background: #0d1f2d;
-    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    border-top: 1px solid rgba(255, 255, 255, .08);
 }
 
 .bottomInner {
@@ -118,41 +120,113 @@
 }
 
 .copy {
-    font-size: 0.78rem;
-    color: rgba(255, 255, 255, 0.3);
     margin: 0;
+    font-size: .78rem;
+    color: rgba(255, 255, 255, .35);
 }
 
-.location {
-    font-size: 0.78rem;
-    color: rgba(255, 255, 255, 0.3);
+.credit {
     margin: 0;
+    font-size: .78rem;
+    color: rgba(255, 255, 255, .35);
 }
 
-/* ── Responsive ── */
-@media (max-width: 1024px) {
+.creditLink {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: .2s;
+}
+
+.creditLink:hover {
+    color: #fff;
+}
+
+/* -------------------------
+   Tablet
+-------------------------- */
+@media (max-width:1024px) {
+
     .footer {
         grid-template-columns: 1fr 1fr;
-        gap: 36px;
-        padding: 40px 28px 32px;
+        gap: 40px;
+        padding: 42px 30px 46px;
     }
+
+    .bottomInner {
+        padding: 18px 30px;
+    }
+
 }
 
-@media (max-width: 640px) {
+
+/* -------------------------
+   Mobile
+-------------------------- */
+@media (max-width:640px) {
+
+    .footerWrapper {
+        padding-bottom: 80px;
+        /* prevents fixed bottom mobile nav overlap */
+    }
+
     .footer {
         grid-template-columns: 1fr;
-        gap: 28px;
-        padding: 32px 20px 28px;
+        gap: 34px;
+        padding: 34px 20px 50px;
+    }
+
+    .companyBlock {
+        gap: 14px;
+    }
+
+    .companyNameChinese {
+        font-size: 1rem;
+    }
+
+    .companyNameEn {
+        font-size: .62rem;
+        line-height: 1.6;
     }
 
     .companyTagline {
         max-width: 100%;
+        font-size: .84rem;
+    }
+
+    .column {
+        gap: 12px;
+    }
+
+    .columnTitle {
+        font-size: .7rem;
+    }
+
+    .footerLink {
+        font-size: 1rem;
+        line-height: 1.55;
+    }
+
+    .hqBox {
+        margin-top: 12px;
+        padding: 16px;
+    }
+
+    .hqLine {
+        font-size: .88rem;
     }
 
     .bottomInner {
         flex-direction: column;
-        gap: 6px;
+        gap: 8px;
         text-align: center;
-        padding: 16px 20px;
+        padding: 18px 20px 95px;
+        /* avoids bottom menu covering text */
     }
+
+    .copy,
+    .credit {
+        font-size: .76rem;
+    }
+
 }
