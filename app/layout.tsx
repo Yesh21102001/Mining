@@ -25,13 +25,13 @@ export const metadata: Metadata = {
 
   creator: "Huayin International Trade",
 
-  metadataBase: new URL("https://yourdomain.com"),
+  metadataBase: new URL("https://huaintrade.com/"),
 
   openGraph: {
     title: "Huayin Mining Investment International Trade",
     description:
       "Trusted partner for mineral trade and industrial exports between China and India.",
-    url: "https://yourdomain.com",
+    url: "https://huaintrade.com/",
     siteName: "Huayin Trade",
     locale: "en_US",
     type: "website",
