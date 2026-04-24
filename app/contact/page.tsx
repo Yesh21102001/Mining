@@ -186,6 +186,17 @@ export default function ContactPage() {
                                     </a>
                                 </div>
                             </li>
+                            <li className={styles.infoRow}>
+                                <span className={styles.infoIcon}>
+                                    <PhoneIcon />
+                                </span>
+                                <div>
+                                    <p className={styles.infoLabel}>China Phone</p>
+                                    <a href={`tel:${t.contact.china_Phone}`} className={styles.infoLink}>
+                                        {t.contact.china_Phone}
+                                    </a>
+                                </div>
+                            </li>
                         </ul>
 
                         <a
