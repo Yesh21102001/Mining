@@ -70,7 +70,7 @@ export default function Footer() {
                     <p className={styles.credit}>
                         Designed and developed by{" "}
                         <a
-                            href="https://www.instagram.com/host.hive"
+                            href="https://hosthive.online/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className={styles.creditLink}
