@@ -1203,3 +1203,577 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* Homepage editorial redesign */
+.main {
+    overflow: clip;
+}
+
+.main .container {
+    max-width: 1360px;
+    padding-right: 56px;
+    padding-left: 56px;
+}
+
+.main .hero {
+    min-height: min(820px, 84vh);
+    min-height: min(820px, 84svh);
+    align-items: flex-end;
+    background: var(--navy2);
+}
+
+.main .heroBgImg {
+    object-position: center 46%;
+    transform: scale(1.015);
+}
+
+.main .heroMask {
+    background: linear-gradient(
+        90deg,
+        rgba(10, 37, 64, 0.9) 0%,
+        rgba(10, 37, 64, 0.72) 42%,
+        rgba(10, 37, 64, 0.2) 100%
+    );
+}
+
+.main .heroBody {
+    max-width: 760px;
+    padding: 96px 0 124px;
+}
+
+.main .heroBody .eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.main .heroBody .eyebrow::before {
+    content: "";
+    width: 34px;
+    height: 1px;
+    background: var(--gold);
+}
+
+.main .heroTitle {
+    max-width: 760px;
+    font-size: clamp(3.4rem, 6.5vw, 6.5rem);
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+}
+
+.main .heroSub {
+    max-width: 560px;
+    font-size: 1.08rem;
+}
+
+.main .heroCtas {
+    gap: 12px;
+}
+
+.main .heroCtas .btnPrimary,
+.main .heroCtas .btnGhost {
+    min-height: 52px;
+    padding-right: 26px;
+    padding-left: 26px;
+}
+
+.main .scrollLine {
+    left: auto;
+    right: max(56px, calc((100vw - 1248px) / 2));
+    transform: none;
+}
+
+.main .statsBar {
+    position: relative;
+    z-index: 3;
+    padding: 0;
+    margin-top: -48px;
+    background: transparent;
+}
+
+.main .statsBar .container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.main .statsGrid {
+    overflow: hidden;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    background: var(--navy);
+    box-shadow: 0 24px 60px rgba(10, 37, 64, 0.18);
+}
+
+.main .statItem {
+    min-height: 126px;
+    padding: 30px 34px;
+}
+
+.main .statVal {
+    font-size: clamp(1.8rem, 3vw, 2.45rem);
+}
+
+.main .statLbl {
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.main .section {
+    padding: 116px 0;
+}
+
+.main .secHead {
+    position: relative;
+    max-width: 760px;
+    margin-bottom: 42px;
+}
+
+.main .secHead .eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    opacity: 0.75;
+}
+
+.main .secHead .eyebrow::before {
+    content: "";
+    width: 26px;
+    height: 1px;
+    background: var(--gold);
+}
+
+.main .h2 {
+    max-width: 720px;
+    font-size: clamp(2rem, 3.4vw, 3.15rem);
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+}
+
+.main .split {
+    grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+    gap: clamp(48px, 8vw, 112px);
+}
+
+.main .splitImg {
+    position: relative;
+    aspect-ratio: 0.96;
+    border-radius: 4px 26px 4px 26px;
+    background: var(--navy);
+}
+
+.main .splitImg img {
+    filter: saturate(0.86);
+}
+
+.main .splitText {
+    padding: 12px 0;
+}
+
+.main .splitText .h2 {
+    margin-bottom: 2px;
+}
+
+.main .twoCol {
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.main .listBox {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 18px;
+    background: #fff;
+}
+
+.main .sectionGray {
+    background: #f8f9fb;
+}
+
+.main .servGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.main .servCard {
+    border-radius: 16px;
+    box-shadow: 0 8px 28px rgba(10, 37, 64, 0.035);
+}
+
+.main .servImg {
+    height: clamp(180px, 20vw, 260px);
+}
+
+.main .servBody {
+    padding: 24px 28px 30px;
+}
+
+.main .servNum {
+    color: var(--gold);
+    opacity: 1;
+}
+
+.main .marqueeWrap {
+    padding: 16px 0;
+}
+
+.main .prodGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.main .prodCard {
+    min-height: 350px;
+    border-radius: 14px;
+    box-shadow: 0 16px 34px rgba(10, 37, 64, 0.1);
+}
+
+.main .prodContent {
+    padding: 24px;
+}
+
+.main .prodName {
+    font-size: 1.05rem;
+}
+
+.main .tradeDivider {
+    margin: 76px 0;
+}
+
+.main .viewAllWrap {
+    justify-content: flex-start;
+    margin-top: 26px;
+}
+
+.main .viewAllBtn {
+    padding: 12px 24px;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+.main .advGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.main .advCard {
+    min-height: 240px;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(10, 37, 64, 0.035);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.main .advCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(10, 37, 64, 0.09);
+}
+
+.main .advNum {
+    color: var(--gold);
+    opacity: 0.7;
+    font-size: 2.3rem;
+}
+
+.main .videoCard {
+    flex-basis: 300px;
+    border-radius: 14px;
+}
+
+.main .videoWrap {
+    aspect-ratio: 4 / 5;
+}
+
+.main .insightGrid {
+    gap: 20px;
+}
+
+.main .insightCard {
+    border-radius: 14px;
+    box-shadow: 0 8px 28px rgba(10, 37, 64, 0.035);
+}
+
+.main .insightImg {
+    height: 220px;
+}
+
+.main .insightBody {
+    padding: 24px 26px 28px;
+}
+
+.main .contactGrid {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: clamp(48px, 8vw, 112px);
+    align-items: center;
+}
+
+.main .contactInfo {
+    gap: 24px;
+}
+
+.main .contactBlock {
+    padding-top: 20px;
+}
+
+.main .contactFormCard {
+    border-radius: 16px;
+    padding: clamp(28px, 4vw, 48px);
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.14);
+}
+
+@media (max-width: 1024px) {
+    .main .container {
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+
+    .main .hero {
+        min-height: 700px;
+        min-height: 78vh;
+    }
+
+    .main .heroBody {
+        padding-bottom: 112px;
+    }
+
+    .main .split {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 44px;
+    }
+
+    .main .prodGrid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .main .contactGrid {
+        gap: 42px;
+    }
+}
+
+@media (max-width: 760px) {
+    .main .section {
+        padding: 84px 0;
+    }
+
+    .main .hero {
+        min-height: 680px;
+        min-height: 76vh;
+        min-height: 76svh;
+    }
+
+    .main .heroMask {
+        background: linear-gradient(
+            90deg,
+            rgba(10, 37, 64, 0.88) 0%,
+            rgba(10, 37, 64, 0.64) 100%
+        );
+    }
+
+    .main .heroBody {
+        padding: 80px 0 112px;
+    }
+
+    .main .heroTitle {
+        font-size: clamp(3rem, 9vw, 5rem);
+    }
+
+    .main .statsBar {
+        margin-top: -38px;
+    }
+
+    .main .statsGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .main .statItem {
+        min-height: 108px;
+        padding: 24px;
+    }
+
+    .main .split {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .main .splitImg {
+        aspect-ratio: 1.2;
+    }
+
+    .main .prodGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .main .prodCard {
+        min-height: 310px;
+    }
+
+    .main .advGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .main .insightGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .main .contactGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .main .container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .main .section {
+        padding: 68px 0;
+    }
+
+    .main .hero {
+        min-height: 650px;
+        min-height: 78vh;
+        min-height: 78svh;
+    }
+
+    .main .heroBody {
+        padding: 72px 0 96px;
+    }
+
+    .main .heroTitle {
+        font-size: clamp(2.7rem, 12vw, 4.2rem);
+    }
+
+    .main .heroSub {
+        font-size: 1rem;
+        margin-bottom: 28px;
+    }
+
+    .main .heroCtas {
+        flex-direction: row;
+    }
+
+    .main .heroCtas .btnPrimary,
+    .main .heroCtas .btnGhost {
+        min-height: 48px;
+        padding-right: 18px;
+        padding-left: 18px;
+        font-size: 0.82rem;
+    }
+
+    .main .scrollLine {
+        right: 24px;
+        height: 42px;
+    }
+
+    .main .statItem {
+        padding: 20px 16px;
+    }
+
+    .main .statVal {
+        font-size: 1.7rem;
+    }
+
+    .main .statLbl {
+        font-size: 0.72rem;
+    }
+
+    .main .secHead {
+        margin-bottom: 30px;
+    }
+
+    .main .h2 {
+        font-size: clamp(1.85rem, 8vw, 2.6rem);
+    }
+
+    .main .servGrid,
+    .main .advGrid,
+    .main .insightGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .main .prodGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .main .servImg {
+        height: 210px;
+    }
+
+    .main .prodCard {
+        min-height: 260px;
+        border-radius: 12px;
+    }
+
+    .main .prodContent {
+        padding: 14px;
+    }
+
+    .main .prodIcon {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 8px;
+        font-size: 0.95rem;
+    }
+
+    .main .prodName {
+        font-size: 0.88rem;
+        line-height: 1.25;
+    }
+
+    .main .prodSub,
+    .main .prodSpec {
+        font-size: 0.68rem;
+    }
+
+    .main .viewAllWrap {
+        justify-content: stretch;
+    }
+
+    .main .viewAllBtn {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .main .tradeDivider {
+        margin: 54px 0;
+    }
+
+    .main .advCard {
+        min-height: auto;
+    }
+
+    .main .contactFormCard {
+        padding: 28px 20px;
+    }
+
+    .main .heroCtas {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+@media (max-width: 380px) {
+    .main .prodGrid {
+        gap: 10px;
+    }
+
+    .main .prodCard {
+        min-height: 230px;
+    }
+
+    .main .prodContent {
+        padding: 12px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .main *,
+    .main *::before,
+    .main *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

@@ -11,9 +11,9 @@
     gap: 48px;
     align-items: start;
 
-    max-width: 1400px;
+    max-width: 1360px;
     margin: 0 auto;
-    padding: 52px 40px 50px;
+    padding: 60px 56px 54px;
 }
 
 /* Company Block */
@@ -111,9 +111,9 @@
 }
 
 .bottomInner {
-    max-width: 1400px;
+    max-width: 1360px;
     margin: 0 auto;
-    padding: 18px 40px;
+    padding: 20px 56px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -150,11 +150,11 @@
     .footer {
         grid-template-columns: 1fr 1fr;
         gap: 40px;
-        padding: 42px 30px 46px;
+        padding: 44px 32px 46px;
     }
 
     .bottomInner {
-        padding: 18px 30px;
+        padding: 18px 32px;
     }
 
 }
@@ -173,7 +173,7 @@
     .footer {
         grid-template-columns: 1fr;
         gap: 34px;
-        padding: 34px 20px 50px;
+        padding: 36px 20px 50px;
     }
 
     .companyBlock {

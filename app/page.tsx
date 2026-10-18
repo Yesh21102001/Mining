@@ -167,25 +167,20 @@ export default function HomePage() {
       {/* ── HERO ── */}
       <section className={styles.hero}>
         <div className={styles.heroBg}>
-          <div className={styles.heroBg}>
-            {/* Desktop image */}
-            <Image
-              src="/images/hero.jpeg"
-              alt=""
-              fill
-              className={`${styles.heroBgImg} ${styles.heroDesktop}`}
-              priority
-            />
-            {/* Mobile image */}
-            <Image
-              src="/images/hero-mobile.png"
-              alt=""
-              fill
-              className={`${styles.heroBgImg} ${styles.heroMobile}`}
-              priority
-            />
-            <div className={styles.heroMask} />
-          </div>
+          <Image
+            src="/images/hero.jpeg"
+            alt=""
+            fill
+            className={`${styles.heroBgImg} ${styles.heroDesktop}`}
+            priority
+          />
+          <Image
+            src="/images/hero-mobile.png"
+            alt=""
+            fill
+            className={`${styles.heroBgImg} ${styles.heroMobile}`}
+            priority
+          />
           <div className={styles.heroMask} />
         </div>
         <div className={styles.container}>

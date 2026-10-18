@@ -1,9 +1,4 @@
-/* ════════════════════════════════════════════════════════════
-   contact.module.css — Dark Split Panel Design
-   ════════════════════════════════════════════════════════════ */
-
 /* ── Page wrapper ── */
-/* Top of file */
 .pageWrapper {
     min-height: calc(100vh - 64px);
     /* subtract your header height */
@@ -567,6 +562,125 @@
     line-height: 1.5;
     text-align: center;
     animation: wcToastIn 0.25s ease-out;
+}
+
+/* Premium contact layout */
+.pageWrapper {
+    width: 100%;
+    max-width: 1360px;
+    min-height: calc(100vh - 100px);
+    padding: clamp(40px, 6vw, 84px) 56px;
+}
+
+.contactWrap {
+    display: grid;
+    grid-template-columns: minmax(320px, 0.86fr) minmax(0, 1.14fr);
+    align-items: stretch;
+    min-height: min(700px, calc(100vh - 190px));
+    margin: 0;
+    border: 1px solid rgba(10, 37, 64, 0.08);
+    border-radius: 18px;
+    box-shadow: 0 28px 80px rgba(10, 37, 64, 0.12);
+}
+
+.panel {
+    width: auto;
+    min-width: 0;
+    padding: clamp(32px, 4vw, 56px);
+}
+
+.panelSub {
+    margin-bottom: 28px;
+    padding-bottom: 0;
+}
+
+.infoList {
+    margin-bottom: 22px;
+}
+
+.infoIcon {
+    border-radius: 10px;
+}
+
+.formArea {
+    min-width: 0;
+    padding: clamp(28px, 4vw, 56px);
+}
+
+.formCard {
+    max-width: 540px;
+    padding: clamp(28px, 4vw, 48px);
+    border-radius: 16px;
+    box-shadow: 0 16px 48px rgba(10, 37, 64, 0.09);
+}
+
+.sendRow {
+    gap: 10px;
+}
+
+.waBtn,
+.wcBtn {
+    min-height: 50px;
+}
+
+@media (max-width: 1024px) {
+    .pageWrapper {
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+
+    .contactWrap {
+        grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+    }
+
+    .panel,
+    .formArea {
+        padding: 32px;
+    }
+}
+
+@media (max-width: 760px) {
+    .pageWrapper {
+        min-height: auto;
+        padding: 32px 20px 56px;
+    }
+
+    .contactWrap {
+        grid-template-columns: 1fr;
+        min-height: 0;
+    }
+
+    .panel {
+        width: 100%;
+        padding: 32px 28px;
+    }
+
+    .formArea {
+        padding: 24px;
+    }
+
+    .formCard {
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .pageWrapper {
+        padding: 24px 16px 40px;
+    }
+
+    .panel,
+    .formArea {
+        padding: 24px 20px;
+    }
+
+    .contactWrap {
+        border-radius: 14px;
+    }
+
+    .formCard {
+        padding: 24px 20px;
+    }
 }
 
 @keyframes wcToastIn {

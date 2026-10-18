@@ -172,3 +172,100 @@
         padding: 1rem 1.125rem 1.25rem;
     }
 }
+
+/* Shared premium page rhythm */
+.pageWrapper {
+    max-width: 1360px;
+    padding: clamp(48px, 7vw, 96px) 56px;
+}
+
+.sectionBlock {
+    margin-bottom: 0;
+}
+
+.headlineBlock {
+    max-width: 760px;
+    gap: 14px;
+    margin-bottom: 52px;
+}
+
+.sectionLabel {
+    color: #b45309;
+}
+
+.headlineBlock h1 {
+    color: #0f172a;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    letter-spacing: -0.045em;
+}
+
+.sectionText {
+    color: #475569;
+    max-width: 62ch;
+}
+
+.headlineBlock::after {
+    width: 36px;
+    background: #b45309;
+}
+
+.staffGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 0;
+}
+
+.staffCard {
+    border-color: rgba(10, 37, 64, 0.1);
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(10, 37, 64, 0.05);
+}
+
+.staffCard:hover {
+    box-shadow: 0 20px 44px rgba(10, 37, 64, 0.12);
+    border-color: rgba(10, 37, 64, 0.18);
+}
+
+.staffPhotoWrap {
+    aspect-ratio: 4 / 4.5;
+}
+
+.staffInfo {
+    padding: 22px 22px 26px;
+}
+
+.staffName {
+    color: #0f172a;
+}
+
+.staffRole {
+    color: #b45309;
+}
+
+@media (max-width: 1100px) {
+    .staffGrid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 760px) {
+    .pageWrapper {
+        padding: 48px 24px;
+    }
+
+    .staffGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pageWrapper {
+        padding: 40px 18px;
+    }
+
+    .staffGrid {
+        grid-template-columns: 1fr;
+    }
+}
