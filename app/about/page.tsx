@@ -21,8 +21,8 @@ export default function AboutPage() {
         </div>
         <div className={styles.heroImage}>
           <img
-            src="/photos/0b6cbe18-5f2c-45b4-9810-24a0468b5ab7.jpg"
-            alt="Port of Lianyungang"
+            src="/about/about-01.jpeg"
+            alt="Mining Mani – Lianyungang Hualn Mining Investment International Trading Co., Ltd."
           />
         </div>
       </section>
@@ -220,6 +220,31 @@ export default function AboutPage() {
           alt="Global logistics night"
         />
         <div className={styles.panoramaOverlayDark} />
+      </section>
+
+      {/* ── TEAM GALLERY (public/about) ── */}
+      <section className={styles.gallerySection}>
+        <div className={styles.galleryHeader}>
+          <div className={styles.label}>Gallery</div>
+          <h2 className={styles.h2}>
+            Our team <em>on the ground.</em>
+          </h2>
+        </div>
+        <div className={styles.galleryGrid}>
+          {/* about-01 is used in the hero, so the gallery starts at 02 */}
+          {Array.from({ length: 10 }, (_, i) => {
+            const n = String(i + 2).padStart(2, "0");
+            return (
+              <div key={n} className={styles.galleryItem}>
+                <img
+                  src={`/about/about-${n}.jpeg`}
+                  alt={`Lianyungang Hualn Mining team photo ${i + 2}`}
+                  loading="lazy"
+                />
+              </div>
+            );
+          })}
+        </div>
       </section>
 
       {/* ── CLOSING ── */}
